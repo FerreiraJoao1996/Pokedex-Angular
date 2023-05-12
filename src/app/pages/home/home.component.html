@@ -1,0 +1,54 @@
+<div class="container full">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="homeTitulos">
+                <img src="assets/imagens/Logo.png" alt="" class="logoInicie">
+                <h3>Explore o mundo <br> dos <font class="ftema2">Pokémons</font></h3>
+                <p>Descubra todas as espécies de Pokémons</p>
+                <label for="filtroPokemons">
+                    <input type="text" name="filtroPokemons" id="filtroPokemons">
+                    <button type="submit">Buscar</button>
+                </label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="homeImagens">
+                <img src="assets/imagens/Rectangle899.jpg" alt="">
+                <img src="assets/imagens/Rectangle900.jpg" alt="" class="pokemonImg2">
+                <img src="assets/imagens/Rectangle901.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container full">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="pokemonTitulo">
+                <h2>Pokédex</h2>
+                <div class="pokemonSeta">
+                    <a><fa-icon [icon]="faChevronLeft"></fa-icon></a>
+                    <a><fa-icon [icon]="faChevronRight"></fa-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="pokemonsLista">
+            <div class="pokemon" *ngFor="let pokemon of pokemons">
+                <div class="pokemonNome" >
+                    <h1>{{pokemon.name}}</h1>
+                    <p>#{{pokemon.id}}</p>
+                </div>
+                <img [src]="pokemon.sprites.front_default" width="100%" alt="">
+                <div class="pokemonAltura">
+                    <p>Altura:</p>
+                    <p>{{pokemon.height}}cm</p>
+                </div>
+                <div class="pokemonPeso">
+                    <p>Peso:</p>
+                    <p>{{pokemon.weight}}kg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

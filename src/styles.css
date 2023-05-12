@@ -1,0 +1,12 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.full { 
+    width: 100%; 
+    max-width: 100%; 
+}
+
+body {
+    color: #2F3E77;
+    padding: 30px 50px;
+    font-family: 'Nunito', sans-serif;
+}

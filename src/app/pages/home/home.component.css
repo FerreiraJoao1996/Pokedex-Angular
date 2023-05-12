@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@100;300;400;700&display=swap');
+
+.fRoboto { 
+    font-family: 'Roboto', sans-serif;
+ }  
+
+.ftema2 { 
+    color: #EA686D; 
+}
+
+.homeTitulos h3 {
+    margin-top: -40px; 
+    font-weight: bold;
+    font-size: 2.5em; 
+    line-height: 45px; 
+    margin-bottom: 10px;
+}
+
+.homeTitulos input { 
+    box-shadow: -4px 1px 9px #bfbfbf;
+    margin-bottom: 
+    50px; 
+    border: 1px solid #eeeeee;
+    padding: 5px 15px;
+ }
+
+.homeTitulos button{ 
+    background-color: #EA686D;
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: 300;
+    box-shadow: -4px 1px 9px #EA686D;
+ }
+
+ .homeImagens { 
+  text-align: right;
+ }
+
+ .homeImagens .pokemonImg2{
+    padding-top: 150px;
+  }
+
+  .pokemonTitulo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .pokemonTitulo h2 {
+    font-weight: bold;
+  }
+
+  .pokemonTitulo a{
+    background-color: #EA686D;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .pokemonTitulo a:first-child{
+    margin-right: 5px;
+  }
+
+  .pokemonsLista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pokemon {
+    box-shadow: 1px 1px 10px #bfbfbf;
+    padding: 15px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  
+  .pokemon:not(:nth-child(5)),
+  .pokemon:not(:nth-child(10)){
+    margin-right: 30px;
+  }
+
+  .pokemon img { 
+    width: 150px;
+    max-width: 230px;
+    object-fit: cover;
+    height: 122px;
+    max-height: 122px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .pokemon .pokemonNome { 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pokemon .pokemonNome h1 { 
+    font-size: 1.7em;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .pokemon .pokemonNome p { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+  }
+
+  .pokemon .pokemonAltura,
+  .pokemon .pokemonPeso {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
